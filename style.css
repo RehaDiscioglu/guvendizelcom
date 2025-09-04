@@ -65,6 +65,14 @@ nav a:hover, .lang-switch:hover {
   font-size: 1.25rem;
   margin-bottom: 2rem;
 }
+.location-highlight {
+  background: rgba(255,255,255,0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  backdrop-filter: blur(10px);
+}
 .cta {
   background: var(--secondary);
   color: var(--primary);
@@ -90,6 +98,12 @@ h2 {
   margin-bottom: 1rem;
   font-size: 2rem;
 }
+.section-intro {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+  text-align: center;
+}
 .services, .why {
   display: flex;
   flex-wrap: wrap;
@@ -104,6 +118,49 @@ h2 {
   padding: 1.5rem;
   flex: 1 1 250px;
   min-width: 220px;
+  position: relative;
+}
+.service-icon, .why-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+.service-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.service-features span {
+  background: var(--primary);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+.service-area {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.service-area h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+.areas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.areas span {
+  background: var(--secondary);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 .services h3 {
   color: var(--secondary);
@@ -112,6 +169,136 @@ h2 {
 address {
   font-style: normal;
   margin-bottom: 1.5rem;
+}
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.contact-info {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.nap-info h3 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+.nap-item {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+.nap-item:last-child {
+  border-bottom: none;
+}
+.quick-contact {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #eee;
+}
+.quick-contact h4 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+.contact-btn {
+  display: block;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.2s;
+}
+.phone-btn {
+  background: var(--primary);
+  color: white;
+}
+.whatsapp-btn {
+  background: #25D366;
+  color: white;
+}
+.email-btn {
+  background: var(--secondary);
+  color: var(--primary);
+}
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.map-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.map-container h4 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+.map-note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+.reviews-section {
+  background: #f9f9f9;
+  padding: 3rem 2rem;
+  margin: 2rem -2rem;
+}
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.review-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.stars {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.review-card p {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #555;
+}
+.review-card cite {
+  font-weight: 500;
+  color: var(--primary);
+}
+.faq-section {
+  margin-top: 3rem;
+}
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.faq-item {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.faq-item h4 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.faq-item p {
+  color: #666;
+  line-height: 1.6;
 }
 .contact-form {
   display: grid;
@@ -145,9 +332,41 @@ address {
 footer {
   background: var(--primary);
   color: var(--accent);
-  text-align: center;
-  padding: 1rem 0;
+  padding: 2rem 0 1rem 0;
   margin-top: 2rem;
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.footer-content h4 {
+  color: var(--secondary);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-content li {
+  margin-bottom: 0.5rem;
+}
+.footer-content a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.footer-content a:hover {
+  color: var(--secondary);
+}
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.2);
 }
 /* Responsive Design */
 @media (max-width: 700px) {
@@ -167,6 +386,18 @@ footer {
   .services, .why {
     flex-direction: column;
     gap: 1rem;
+  }
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .reviews-section {
+    margin: 2rem -1rem;
+    padding: 2rem 1rem;
+  }
+  .footer-content {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
   }
 }
 .lang-switch {
