@@ -541,32 +541,11 @@ footer {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.service-pricing {
+.service-action {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   padding-top: 2rem;
   border-top: 2px solid #f0f0f0;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.price-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.price-label {
-  font-size: 0.9rem;
-  color: #666;
-  font-weight: 500;
-}
-
-.price-value {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: var(--primary);
 }
 
 .service-cta {
@@ -797,12 +776,6 @@ nav a.active {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
-  }
-  
-  .service-pricing {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 1rem;
   }
   
   .service-cta {
