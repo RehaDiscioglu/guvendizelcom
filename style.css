@@ -131,12 +131,6 @@ h2 {
 .service-features {
   margin-top: auto;
   padding-top: 1rem;
-}
-.service-icon, .why-icon {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  display: block;
-}
 .service-features {
   display: flex;
   flex-wrap: wrap;
