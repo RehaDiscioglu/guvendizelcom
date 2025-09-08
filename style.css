@@ -261,51 +261,6 @@ address {
   color: #666;
   text-align: center;
 }
-.reviews-section {
-  background: #f9f9f9;
-  padding: 3rem 2rem;
-  margin: 2rem -2rem;
-}
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-  align-items: start;
-}
-.review-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-}
-.stars {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  flex-shrink: 0;
-}
-.review-card p {
-  font-style: italic;
-  margin-bottom: 1rem;
-  color: #555;
-  line-height: 1.6;
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-.review-card cite {
-  font-weight: 500;
-  color: var(--primary);
-  display: block;
-  text-align: right;
-  font-size: 0.95rem;
-  flex-shrink: 0;
-  margin-top: 1rem;
-}
 .faq-section {
   margin-top: 3rem;
 }
@@ -431,10 +386,6 @@ footer {
     grid-template-columns: 1fr;
     padding: 0 1rem;
   }
-}
-.lang-switch {
-  display: none;
-}
 
 /* Services Page Specific Styles */
 .services-detailed {
